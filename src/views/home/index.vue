@@ -1,6 +1,6 @@
 <template>
-  <div>
-    home
+  <div class="home">
+    <img src="/status.png" />
   </div>
 </template>
 <script lang="ts">
@@ -12,5 +12,10 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-
+.home {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 </style>
