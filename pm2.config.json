@@ -1,0 +1,10 @@
+  
+{
+  "apps": [
+    {
+      "name": "edu-booss-lt",
+      "script": "npm",
+      "args": "build"
+    }
+  ]
+}
