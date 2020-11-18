@@ -5,7 +5,7 @@
     :model="form"
     :rules="rules"
     label-width="80px">
-      <h2>lt: 一个不知道是啥的后台</h2>
+      <h2>lt: 大爷来玩啊~</h2>
       <el-form-item label="手机号码"  prop="phone">
         <el-input v-model="form.phone"></el-input>
       </el-form-item>

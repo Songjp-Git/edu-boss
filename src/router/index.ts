@@ -38,6 +38,29 @@ const routes: Array<RouteConfig> = [
         component: () => import(/* webpackChunkName: 'course' */'@/views/course/index.vue')
       },
       {
+        path: '/course-create',
+        name: 'course-create',
+        component: () => import(/* webpackChunkName: 'course-create-edit' */'@/views/course/create.vue')
+      },
+      {
+        path: '/:courseId/course-edit',
+        name: 'course-edit',
+        component: () => import(/* webpackChunkName: 'course-create-edit' */'@/views/course/edit.vue'),
+        props: true
+      },
+      {
+        path: '/course/:courseId/section',
+        name: 'course-section',
+        component: () => import(/* webpackChunkName: 'course-create-section' */'@/views/course/section.vue'),
+        props: true
+      },
+      {
+        path: '/course/:courseId/video',
+        name: 'course-video',
+        component: () => import(/* webpackChunkName: 'course-create-video' */'@/views/course/video.vue'),
+        props: true
+      },
+      {
         path: '/menu',
         name: 'menu',
         component: () => import(/* webpackChunkName: 'menu' */'@/views/menu/index.vue')
@@ -70,7 +93,13 @@ const routes: Array<RouteConfig> = [
       {
         path: '/role/:roleId/allock-menu',
         name: 'allock-menu',
-        component: () => import(/* webpackChunkName: 'allock-menu' */'@/views/role/allockMenu.vue'),
+        component: () => import(/* webpackChunkName: 'allock-menu-resource' */'@/views/role/allockMenu.vue'),
+        props: true
+      },
+      {
+        path: '/role/:roleId/alloc-resource',
+        name: 'alloc-resource',
+        component: () => import(/* webpackChunkName: 'allock-menu-resource' */'@/views/role/alloc-resource.vue'),
         props: true
       },
       {

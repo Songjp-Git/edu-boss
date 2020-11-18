@@ -1,4 +1,5 @@
-name: Publish And Deploy EDU-BOSS-LT
+
+name: EDU-BOSS-LT Publish And Deploy 
 on:
   push:
     tags:

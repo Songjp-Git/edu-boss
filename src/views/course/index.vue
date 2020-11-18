@@ -1,11 +1,19 @@
 <template>
-  <div>
-    <h1>课程</h1>
+  <div class="course">
+    <course-list />
   </div>
 </template>
+
 <script lang="ts">
 import Vue from 'vue'
+import CourseList from './components/CourseList.vue'
+
 export default Vue.extend({
-  name: 'Course'
+  name: 'CourseIndex',
+  components: {
+    CourseList
+  }
 })
 </script>
+
+<style lang="scss" scoped></style>
